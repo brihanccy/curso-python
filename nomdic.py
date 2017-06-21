@@ -8,7 +8,8 @@ if __name__ == '__main__':
     registro = {'NOMBRE':{'Carol','Brian'}}
 
     for llave,valor in registro.iteritems():
-        if args.NOMBRE == registro :
-   	       print(' la llave',args.NOMBRE,'no se registra en el diccionario')
-   	    else:
-           print('la llave',args.NOMBRE,'la llave se registra en el diccionario')
+        if args.NOMBRE == llave:
+   	        print('la llave',args.NOMBRE,' se registra en el diccionario')
+
+        else:
+           print('la llave',args.NOMBRE,'no  se registra en el diccionario')
