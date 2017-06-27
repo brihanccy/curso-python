@@ -45,4 +45,17 @@ for clave,valor in libreria.iteritems():
 for clave,valor in libreria .iteritems():
     lista1 = 'el estudiante {0} de la ciudad de {1} es de edad {2}, es de la ciudad de {3}, y' \
              'cursa {3} en la universidad'
-    print (lista1.format(clave,valor['ciudad'],valor['edad'],valor['anio']))
+    if valor['ciudad'] =='Managua':
+        print (lista1.format(clave,valor['ciudad'],valor['edad'],valor['anio']))
+for clave, valor in libreria.iteritems():
+    lista2 = 'el estudiante {0} de la ciudad de {1} es de edad {2}, es de la ciudad de {3}, y' \
+             'cursa {3} en la universidad'
+    if valor['ciudad'] == 'Masaya' and valor['anio']== 1:
+        print (lista1.format(clave,valor['ciudad'],valor['edad'],valor['anio']))
+for clave, valor in libreria.iteritems():
+    lista3 = 'el estudiante {0} de la ciudad de {1} es de edad {2}, es de la ciudad de {3}, y' \
+             'cursa {3} en la universidad'
+    if valor ['edad'] < 21 :
+        print (lista1.format(clave, valor['ciudad'], valor['edad'], valor['anio']))
+
+
