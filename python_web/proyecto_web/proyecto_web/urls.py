@@ -15,7 +15,9 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
+from documentos.views import Documentos
 
 urlpatterns = [
-    url(r'^admin/', admin.site.urls),
+    url(r'^documentos/$', Documentos.as_view()),
+       url(r'^admin/',admin.site.urls),
 ]

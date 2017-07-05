@@ -1,0 +1,10 @@
+ {% extends 'base.html' %}
+
+		<h1> {{encabezado}} </h1>
+		<p> esto esta definido en base. html
+		{% block contenido %}</p>
+		    {% for d in docs %}
+		        <div> {{d.nombre}} </div>
+		    {% endfor %}
+		{% endblock %}
+	
