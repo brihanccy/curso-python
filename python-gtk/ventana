@@ -1,0 +1,19 @@
+django == 1.11
+import gi
+
+gi.require_version('Gtk','3.0')
+from gi.repository import Gtk
+
+if __name__ == '__main__':
+	ventana = Gtk.window(title = 'ejemplo 1')
+	ventana.connect('delete-event',Gtk.main_quit)
+	button = Gtk.button('botton1')
+	button2 = Gtk.button('Boton2')
+
+	contenedor = Gtk.VBox()
+	contenedor.pack_start(button,False,False,0)
+	contenedor.pack_start(button2,False,False,0)
+	ventana.add(contenedor)
+	ventana.add(button)
+	ventana.show_all()
+	Gtk.main()
