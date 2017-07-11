@@ -20,17 +20,17 @@ class Mi_Ventana(Gtk.Window):
 		self.label_1.set_text(impreso)
 
 	def agregar_boton(self):	
-		self.btn_1 = Gtk.Button('describir texto escrito')
+		self.btn_1 = Gtk.Button('Resaltar texto escrito')
 		self.btn_1.connect('clicked', self.Imprimir)
 
 	def agregar_texto(self):	
 		self.texto = Gtk.Entry()
 
 	def agregar_label(self):	
-		self.label_1 = Gtk.Label('enseñe el texto')
+		self.label_1 = Gtk.Label('Mostrar el texto')
 
 	def agregar_salida(self):	
-		self.btnexit = Gtk.Button('terminar')
+		self.btnexit = Gtk.Button('Finalizar')
 		self.btnexit.connect('clicked', Gtk.main_quit)
 
 	def contenedor(self):	
